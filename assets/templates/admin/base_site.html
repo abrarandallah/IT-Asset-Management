@@ -1,0 +1,11 @@
+<!-- C:\Users\HP\OneDrive\Documents\proj3\IT-Asset-Management\assets\templates\admin\base_site.html -->
+{% extends "admin/base.html" %}
+{% load static %}
+
+{% block branding %}
+  <h1 id="site-name">
+    <a href="{% url 'admin:index' %}">
+        <img src="{% static 'images/logo.png' %}" alt="Logo" height="40px" />
+    </a>
+  </h1>
+{% endblock %}

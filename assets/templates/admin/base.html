@@ -1,0 +1,8 @@
+<!-- C:\Users\HP\OneDrive\Documents\proj3\IT-Asset-Management\assets\templates\admin\base.html -->
+{% extends "admin/base.html" %}
+{% load static %}
+
+{% block extrahead %}
+  <link rel="icon" href="{% static 'images/logo.png' %}" type="image/x-icon" />
+  {{ block.super }}
+{% endblock %}
